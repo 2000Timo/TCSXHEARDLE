@@ -1,29 +1,37 @@
 let songCounter = 0;
 let counter = 0;
 
+addSoundOne(counter);
+
 function nextSnippet(){
     resetAudio();
     counter++;
     switch(counter){
         case 1:
             document.getElementById('skipButton').innerHTML = "Skip +2s";
+            newSnippetAudio();
             break;
         case 2:
             document.getElementById('skipButton').innerHTML = "Skip +3s";
+            newSnippetAudio();
             break;
         case 3:
             document.getElementById('skipButton').innerHTML = "Skip +4s";
+            newSnippetAudio();
             break;
         case 4:
             document.getElementById('skipButton').innerHTML = "Skip +5s";
+            newSnippetAudio();
             break;
         case 5:
             document.getElementById('skipButton').innerHTML = "Skip Song";
+            newSnippetAudio();
             break;
         case 6:
             document.getElementById('skipButton').innerHTML = "Skip +1s";
             counter = 0;
             songCounter++;
+            newSnippetAudio();
             console.log(songCounter + " " + counter);
             break;
         default:
@@ -51,6 +59,18 @@ function resetAudio(){
             break;
         case 1:
             resetAudioSongTwo();
+            break;
+        default:
+    }
+}
+
+function newSnippetAudio(){
+    switch(songCounter){
+        case 0:
+            addSoundOne(counter);
+            break;
+        case 1:
+            addSoundTwo(counter);
             break;
         default:
     }

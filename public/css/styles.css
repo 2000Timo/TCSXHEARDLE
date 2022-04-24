@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+button{
+    border-style: none;
+    font-size: 10rem;
+    background-color: rgb(151, 255, 151);
+    border-radius: 5rem;
+    padding: 5rem;
+}
+
+button:hover{
+    background-color: rgb(106, 184, 106);
+}

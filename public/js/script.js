@@ -2,6 +2,7 @@ let songCounter = 0;
 let counter = 0;
 
 function nextSnippet(){
+    resetAudio();
     counter++;
     switch(counter){
         case 1:
@@ -29,12 +30,25 @@ function nextSnippet(){
 }
 
 function playAudio(){
+    resetAudio();
     switch(songCounter){
         case 0:
             playAudioSongOne(counter);
             break;
         case 1:
             playAudioSongTwo(counter);
+            break;
+        default:
+    }
+}
+
+function resetAudio(){
+    switch(songCounter){
+        case 0:
+            resetAudioSongOne();
+            break;
+        case 1:
+            resetAudioSongTwo();
             break;
         default:
     }

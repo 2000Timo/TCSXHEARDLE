@@ -10,3 +10,9 @@ var audios = [audio1s, audio2s, audio3s, audio4s, audio5s, audio6s];
 function playAudioSongTwo(counter){
     audios[counter].play();
 }
+
+function resetAudioSongTwo(){
+    for(var i=0; i<audios.length; i++){
+        audios[i].pause();
+    }
+}

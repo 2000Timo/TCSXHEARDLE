@@ -23,13 +23,15 @@ function nextSnippet(){
         case 6:
             document.getElementById('skipButton').innerHTML = "Skip +1s";
             counter = 0;
-            songCounter = 1;
+            songCounter++;
+            console.log(songCounter + " " + counter);
             break;
         default:
     }
 }
 
 function playAudio(){
+    console.log(songCounter);
     resetAudio();
     switch(songCounter){
         case 0:

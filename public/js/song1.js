@@ -5,14 +5,14 @@ var audio4s = new Audio("src/Song1/I Can't Make You Love Me 7s.mp3");
 var audio5s = new Audio("src/Song1/I Can't Make You Love Me 11s.mp3");
 var audio6s = new Audio("src/Song1/I Can't Make You Love Me 16s.mp3");
 
-var audios = [audio1s, audio2s, audio3s, audio4s, audio5s, audio6s];
+var audios1 = [audio1s, audio2s, audio3s, audio4s, audio5s, audio6s];
 
 function playAudioSongOne(counter){
-    audios[counter].play();
+    audios1[counter].play();
 }
 
 function resetAudioSongOne(){
-    for(var i=0; i<audios.length; i++){
-        audios[i].pause();
+    for(var i=0; i<audios1.length; i++){
+        audios1[i].pause();
     }
 }

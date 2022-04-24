@@ -6,6 +6,7 @@ addSoundOne(counter);
 function nextSnippet(){
     resetAudio();
     counter++;
+    console.log(counter);
     switch(counter){
         case 1:
             document.getElementById('skipButton').innerHTML = "Skip +2s";
@@ -32,7 +33,6 @@ function nextSnippet(){
             counter = 0;
             songCounter++;
             newSnippetAudio();
-            console.log(songCounter + " " + counter);
             break;
         default:
     }
@@ -58,6 +58,9 @@ function resetAudio(){
             resetAudioSongOne();
             break;
         case 1:
+            if(counter == 0){
+                resetAudioSongOne();
+            }
             resetAudioSongTwo();
             break;
         default:

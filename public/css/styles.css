@@ -5,7 +5,7 @@ body{
 
 .media{
     width: 100%;
-    height: 40%;
+    height: 45%;
     position: absolute;
     bottom: 0;
 }
@@ -28,7 +28,7 @@ body{
 }
 
 #guessSong{
-  font-size: 3rem;
+  font-size: 5rem;
   border-style: none;
   border-radius: 5rem;
   text-align: center;

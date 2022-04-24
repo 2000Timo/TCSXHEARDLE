@@ -1,4 +1,4 @@
-const audios2 = [audio1s, audio2s, audio3s, audio4s, audio5s, audio6s];
+const audios2 = [];
 
 function playAudioSongTwo(counter){
     audios2[counter].play();

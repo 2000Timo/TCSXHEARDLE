@@ -1,14 +1,19 @@
 body{
     text-align: center;
-}
-button{
-    border-style: none;
-    font-size: 10rem;
-    background-color: rgb(151, 255, 151);
-    border-radius: 5rem;
-    padding: 5rem;
+    background-color: rgb(50, 50, 50);
 }
 
-button:hover{
-    background-color: rgb(106, 184, 106);
+#play{
+    width: 0px;
+    height: 0px;
+    transform:rotate(360deg);
+    background-color: rgb(50, 50, 50);
+    border-style: solid;
+    border-width: 50px 0 50px 86.6px;
+    border-color: transparent transparent transparent #c59afa;
+    bottom: 3rem;
+    position: absolute;
+}
+#play:hover{
+    border-color: transparent transparent transparent #9742ff;
 }
